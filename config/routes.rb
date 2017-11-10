@@ -4,9 +4,5 @@ Rails.application.routes.draw do
 
   get 'home/index'
   get 'home/input'
-  get 'home/clear'
-  get 'home/check_cache'
-
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

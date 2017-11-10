@@ -18,26 +18,7 @@ class HomeController < ApplicationController
     FileDeleteJob.perform_later @name
   end
 
-  # def clear
-  #   @response = {}
-  #   @file = params[:name]
-  #   FileDeleteJob.perform_later @file
-  #   @response["response"] = "success"
-  #   respond_to do |format|
-  #     format.json { render json: @response}
-  #   end
-  # end
-
-  # def check_cache
-  #   @response = {}
-  #   @uid = params[:uid]
-  #   @aid = params[:aid]
-  #   @lang = params[:language]
-  #   @obj = Check.new(@uid,@aid,@lang)
-  #   @response["response"] = @obj.has_cache
-  #   respond_to do |format|
-  #     format.json { render json: @response}
-  #   end
-  # end
+  def test
+  end
 
 end
