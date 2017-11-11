@@ -13,7 +13,7 @@ module Cc
     # -- all .rb files in that directory are automatically loaded.
     config.autoload_paths << Rails.root.join('app', 'services')
     config.action_dispatch.default_headers = {
-    'Access-Control-Allow-Origin' => ['http://www.dctacademy.com','http://localhost:3000']
+    'Access-Control-Allow-Origin' => ['http://www.dctacademy.com',"http://localhost:3000"],
     'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
     }
   end
